@@ -12,7 +12,7 @@
         "repo": "ifoohoo/e2e-test"
       },
       "description": "Experimental, framework-neutral E2E specification skill family (Gate B candidate): help/author/review/repair implemented, provider defaults to NOT_ENABLED and requires explicit project binding.",
-      "version": "0.2.0-alpha.1"
+      "version": "0.2.0-alpha.2"
     },
     {
       "name": "release-skill",

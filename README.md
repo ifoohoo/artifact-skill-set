@@ -17,7 +17,7 @@ This repository contains only the marketplace manifests — plugin implementatio
 
 | Plugin | Version | Source | Claude Code | CodeBuddy | Codex | Kimi Code |
 | --- | --- | --- | --- | --- | --- | --- |
-| e2e-test | 0.2.0-alpha.1 | `ifoohoo/e2e-test` | ✓ | ✓ | ✓ | — |
+| e2e-test | 0.2.0-alpha.2 | `ifoohoo/e2e-test` | ✓ | ✓ | ✓ | — |
 | flow-architect | 0.5.1 | `ifoohoo/flow-architect` | ✓ | — | ✓ | — |
 | release-skill | 0.2.3 | `ifoohoo/release-skill` | ✓ | ✓ | ✓ | ✓ |
 
