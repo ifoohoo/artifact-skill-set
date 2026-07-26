@@ -8,7 +8,9 @@
       "name": "e2e-test",
       "source": {
         "source": "url",
-        "url": "https://github.com/ifoohoo/e2e-test"
+        "url": "https://github.com/ifoohoo/e2e-test",
+        "ref": "refs/tags/v0.2.0-alpha.2",
+        "sha": "dde2a67e0a9cf84865f0dc369ffaf03056727918"
       },
       "policy": {
         "installation": "AVAILABLE",
