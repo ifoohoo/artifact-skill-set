@@ -1,0 +1,118 @@
+name: Publish to Marketplace
+
+# 只允许手工触发，不在 push 或 PR 时自动发布
+on:
+  workflow_dispatch:
+
+# 防止并发发布
+concurrency:
+  group: publish-marketplace
+  cancel-in-progress: false
+
+jobs:
+  # ─── publish：使用 GITHUB_TOKEN 自发布，无需 production 环境或专用 secret ────
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    # 发布 job 需要写权限以推送公开仓库
+    permissions:
+      contents: write
+
+    steps:
+      - name: 检查分支来源（非 main 明确失败）
+        if: github.ref != 'refs/heads/main'
+        run: |
+          echo "❌ 此工作流只能从 workspace 的 main 分支发布，当前分支：${{ github.ref }}"
+          exit 1
+
+      - name: 检出 workspace
+        uses: actions/checkout@v4
+        with:
+          path: workspace
+
+      - name: 设置 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 语法检查
+        working-directory: workspace
+        run: npm run lint
+
+      - name: 自动化测试
+        working-directory: workspace
+        run: npm test
+
+      - name: 确定性生成检查
+        working-directory: workspace
+        run: npm run check:deterministic
+
+      - name: 渲染公开快照
+        working-directory: workspace
+        run: npm run render
+
+      - name: 完整远端门禁
+        working-directory: workspace
+        run: npm run gate:full
+
+      # 公开仓库 checkout 必须放在语法、测试、确定性生成、渲染和完整门禁全部通过之后，
+      # 避免前序步骤失败时已使用写令牌。
+      - name: 检出公开仓库
+        uses: actions/checkout@v4
+        with:
+          repository: ifoohoo/artifact-skill-set
+          token: ${{ github.token }}
+          ref: main
+          path: public-repo
+
+      - name: 精确同步到公开仓库
+        working-directory: workspace
+        run: node scripts/sync-public.mjs --target ${{ github.workspace }}/public-repo
+
+      - name: 检查差异并提交
+        id: diff
+        working-directory: public-repo
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+            echo "无差异，跳过提交"
+          else
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -A
+            git commit -m "chore: 同步公开快照（源 workspace ${{ github.sha }}）"
+          fi
+
+      - name: 推送到公开仓库
+        if: steps.diff.outputs.has_changes == 'true'
+        working-directory: public-repo
+        run: git push origin HEAD:main
+
+      - name: 核对远端提交
+        if: steps.diff.outputs.has_changes == 'true'
+        working-directory: public-repo
+        run: |
+          LOCAL_SHA=$(git rev-parse HEAD)
+          REMOTE_SHA=$(git ls-remote origin refs/heads/main | cut -f1)
+          if [ "$LOCAL_SHA" = "$REMOTE_SHA" ]; then
+            echo "✅ 远端 main 指向刚创建的提交 $LOCAL_SHA"
+          else
+            echo "❌ 远端 main ($REMOTE_SHA) 与本地 ($LOCAL_SHA) 不一致"
+            exit 1
+          fi
+
+      - name: 工作流摘要
+        if: always()
+        run: |
+          if [ "${{ steps.diff.outputs.has_changes }}" = "true" ]; then
+            echo "## 发布结果" >> "$GITHUB_STEP_SUMMARY"
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            echo "- ✅ 已推送新提交到 ifoohoo/artifact-skill-set main" >> "$GITHUB_STEP_SUMMARY"
+            echo "- 源 workspace SHA: \`${{ github.sha }}\`" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "## 发布结果" >> "$GITHUB_STEP_SUMMARY"
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            echo "- ℹ️ 公开仓库内容与快照一致，无变更，未创建提交" >> "$GITHUB_STEP_SUMMARY"
+          fi
