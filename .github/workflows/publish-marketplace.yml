@@ -10,14 +10,10 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # ─── publish：使用 GITHUB_TOKEN 自发布，无需 production 环境或专用 secret ────
+  # ─── publish：在 workspace 仓库中运行，使用 PAT 推送到公开仓库 ────
   publish:
     runs-on: ubuntu-latest
     timeout-minutes: 15
-
-    # 发布 job 需要写权限以推送公开仓库
-    permissions:
-      contents: write
 
     steps:
       - name: 检查分支来源（非 main 明确失败）
@@ -26,12 +22,10 @@ jobs:
           echo "❌ 此工作流只能从 workspace 的 main 分支发布，当前分支：${{ github.ref }}"
           exit 1
 
-      - name: 检出 workspace
+      - name: 检出 workspace（当前仓库）
         uses: actions/checkout@v4
         with:
-          repository: ifoohoo/artifact-skill-set-workspace
           ref: main
-          path: workspace
 
       - name: 设置 Node.js
         uses: actions/setup-node@v4
@@ -39,23 +33,18 @@ jobs:
           node-version: '20'
 
       - name: 语法检查
-        working-directory: workspace
         run: npm run lint
 
       - name: 自动化测试
-        working-directory: workspace
         run: npm test
 
       - name: 确定性生成检查
-        working-directory: workspace
         run: npm run check:deterministic
 
       - name: 渲染公开快照
-        working-directory: workspace
         run: npm run render
 
       - name: 完整远端门禁
-        working-directory: workspace
         run: npm run gate:full
 
       # 公开仓库 checkout 必须放在语法、测试、确定性生成、渲染和完整门禁全部通过之后，
@@ -64,12 +53,11 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: ifoohoo/artifact-skill-set
-          token: ${{ github.token }}
+          token: ${{ secrets.PUBLIC_MARKETPLACE_TOKEN }}
           ref: main
           path: public-repo
 
       - name: 精确同步到公开仓库
-        working-directory: workspace
         run: node scripts/sync-public.mjs --target ${{ github.workspace }}/public-repo
 
       - name: 检查差异并提交
