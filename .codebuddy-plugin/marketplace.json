@@ -22,6 +22,15 @@
       },
       "description": "Process architecture review, draft, and meeting package skill family",
       "version": "0.5.1"
+    },
+    {
+      "name": "e2e-test",
+      "source": {
+        "source": "github",
+        "repo": "ifoohoo/e2e-test"
+      },
+      "description": "Experimental, framework-neutral E2E specification skill family (Gate B candidate): help/author/review/repair implemented, provider defaults to NOT_ENABLED and requires explicit project binding.",
+      "version": "0.2.0-alpha.1"
     }
   ]
 }
