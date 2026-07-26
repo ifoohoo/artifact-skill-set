@@ -21,7 +21,7 @@
         "repo": "ifoohoo/release-skill"
       },
       "description": "Safe preparation and frozen GitHub/npm production publishing with full happy end verification",
-      "version": "0.2.2"
+      "version": "0.2.3"
     }
   ]
 }
