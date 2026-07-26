@@ -5,6 +5,20 @@
   },
   "plugins": [
     {
+      "name": "artifact-chain-assistant",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/ifoohoo/artifact-chain-assistant",
+        "ref": "refs/tags/artifact-chain-assistant-v0.8.0",
+        "sha": "ff222f9c79166e224e5caaaae978daab680d9c33"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
       "name": "e2e-test",
       "source": {
         "source": "url",

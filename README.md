@@ -17,6 +17,7 @@ This repository contains only the marketplace manifests — plugin implementatio
 
 | Plugin | Version | Source | Claude Code | CodeBuddy | Codex | Kimi Code |
 | --- | --- | --- | --- | --- | --- | --- |
+| artifact-chain-assistant | 0.8.0 | `ifoohoo/artifact-chain-assistant` | ✓ | ✓ | ✓ | — |
 | e2e-test | 0.2.0-alpha.2 | `ifoohoo/e2e-test` | ✓ | ✓ | ✓ | — |
 | flow-architect | 0.5.1 | `ifoohoo/flow-architect` | ✓ | — | ✓ | — |
 | release-skill | 0.2.3 | `ifoohoo/release-skill` | ✓ | ✓ | ✓ | ✓ |
@@ -30,6 +31,6 @@ After adding the marketplace, install plugins with your platform's plugin manage
 **artifact-skill-set** is the public marketplace index of AI IDE plugin/skill packages maintained by 广州市风荷科技有限公司, targeting Claude Code, CodeBuddy/WorkBuddy, OpenAI Codex, and Kimi Code.
 
 - Add the marketplace with the commands above, then install individual plugins through each platform's plugin manager.
-- Currently distributed: `e2e-test`, `flow-architect`, `release-skill`. See the table for per-platform availability.
+- Currently distributed: `artifact-chain-assistant`, `e2e-test`, `flow-architect`, `release-skill`. See the table for per-platform availability.
 - Each plugin's version authority lives in its own repository (self-contained manifests and git tags); this index only references them.
 - Licensed under MIT — see [LICENSE](LICENSE).
