@@ -10,7 +10,9 @@
       "name": "artifact-chain-assistant",
       "source": {
         "source": "github",
-        "repo": "ifoohoo/artifact-chain-assistant"
+        "repo": "ifoohoo/artifact-chain-assistant",
+        "ref": "artifact-chain-assistant-v0.8.1",
+        "sha": "ff37fc376eaec4c3532c30dfdcc2ea757181da4c"
       },
       "description": "Artifact-chain intake, review/repair/batch/audit workflows, diagnostics, hooks, and version-lock maintenance helpers.",
       "version": "0.8.1"
@@ -19,7 +21,9 @@
       "name": "e2e-test",
       "source": {
         "source": "github",
-        "repo": "ifoohoo/e2e-test"
+        "repo": "ifoohoo/e2e-test",
+        "ref": "v0.2.0-alpha.2",
+        "sha": "dde2a67e0a9cf84865f0dc369ffaf03056727918"
       },
       "description": "Experimental, framework-neutral E2E specification skill family (Gate B candidate): help/author/review/repair implemented, provider defaults to NOT_ENABLED and requires explicit project binding.",
       "version": "0.2.0-alpha.2"
@@ -28,7 +32,9 @@
       "name": "flow-architect",
       "source": {
         "source": "github",
-        "repo": "ifoohoo/flow-architect"
+        "repo": "ifoohoo/flow-architect",
+        "ref": "v0.5.3",
+        "sha": "53388178bd81e1892ca6b70125a203b024bee5f5"
       },
       "description": "Process architecture review, draft, and meeting package skill family",
       "version": "0.5.3"
@@ -37,7 +43,9 @@
       "name": "release-skill",
       "source": {
         "source": "github",
-        "repo": "ifoohoo/release-skill"
+        "repo": "ifoohoo/release-skill",
+        "ref": "release-skill-v0.2.3",
+        "sha": "1551b6b076bc22b639ddeec332ef0ed5e5bca876"
       },
       "description": "Safe preparation and frozen GitHub/npm production publishing with full happy end verification",
       "version": "0.2.3"
