@@ -2,7 +2,7 @@
 
 AI IDE plugin marketplace index covering Claude Code, CodeBuddy/WorkBuddy, OpenAI Codex, and Kimi Code.
 
-**Marketplace version:** `20260727105650`
+**Marketplace version:** `20260727143810`
 
 This repository contains only the marketplace manifests — plugin implementations live in their own repositories.
 
@@ -14,6 +14,23 @@ This repository contains only the marketplace manifests — plugin implementatio
 | CodeBuddy / WorkBuddy | `/plugin marketplace add ifoohoo/artifact-skill-set` |
 | OpenAI Codex | `codex plugin marketplace add ifoohoo/artifact-skill-set` |
 | Kimi Code | `/plugins marketplace https://raw.githubusercontent.com/ifoohoo/artifact-skill-set/main/kimi-marketplace.json` |
+
+## Using HTTPS instead of SSH
+
+Claude Code resolves GitHub `owner/repo` shorthand (including plugin entries with `source: "github"` in this marketplace) over SSH by default. If you do not have a GitHub account, SSH key, or SSH agent configured, set the following environment variable **before** launching Claude Code to force HTTPS cloning:
+
+- **macOS / Linux:** `export CLAUDE_CODE_PLUGIN_PREFER_HTTPS=1`
+- **Windows PowerShell:** `$env:CLAUDE_CODE_PLUGIN_PREFER_HTTPS='1'`
+
+You can also add this marketplace via an explicit HTTPS URL:
+
+```
+/plugin marketplace add https://github.com/ifoohoo/artifact-skill-set.git
+```
+
+The environment variable above also causes `owner/repo` shorthand plugin installations to use HTTPS. Public repositories cloned over HTTPS do not require a GitHub account.
+
+> **Tip:** If Git still rewrites HTTPS URLs to SSH, check your local Git `url.*.insteadOf` configuration.
 
 ## Plugins
 
