@@ -4,6 +4,7 @@
   "owner": {
     "name": "ifoohoo"
   },
+  "version": "20260727105650",
   "plugins": [
     {
       "name": "artifact-chain-assistant",

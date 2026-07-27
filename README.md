@@ -2,6 +2,8 @@
 
 AI IDE plugin marketplace index covering Claude Code, CodeBuddy/WorkBuddy, OpenAI Codex, and Kimi Code.
 
+**Marketplace version:** `20260727105650`
+
 This repository contains only the marketplace manifests — plugin implementations live in their own repositories.
 
 ## Add this marketplace
