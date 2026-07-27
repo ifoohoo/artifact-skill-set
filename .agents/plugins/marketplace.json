@@ -8,9 +8,7 @@
       "name": "artifact-chain-assistant",
       "source": {
         "source": "url",
-        "url": "https://github.com/ifoohoo/artifact-chain-assistant",
-        "ref": "refs/tags/artifact-chain-assistant-v0.8.0",
-        "sha": "ff222f9c79166e224e5caaaae978daab680d9c33"
+        "url": "https://github.com/ifoohoo/artifact-chain-assistant"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -37,8 +35,8 @@
       "source": {
         "source": "url",
         "url": "https://github.com/ifoohoo/flow-architect",
-        "ref": "refs/tags/v0.5.1",
-        "sha": "f0b809da8b761435809ba53fc4cf26cad1bb109d"
+        "ref": "refs/tags/v0.5.3",
+        "sha": "53388178bd81e1892ca6b70125a203b024bee5f5"
       },
       "policy": {
         "installation": "AVAILABLE",

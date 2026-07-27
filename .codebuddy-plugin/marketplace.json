@@ -13,7 +13,7 @@
         "repo": "ifoohoo/artifact-chain-assistant"
       },
       "description": "Artifact-chain intake, review/repair/batch/audit workflows, diagnostics, hooks, and version-lock maintenance helpers.",
-      "version": "0.8.0"
+      "version": "0.8.1"
     },
     {
       "name": "e2e-test",

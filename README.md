@@ -36,9 +36,9 @@ The environment variable above also causes `owner/repo` shorthand plugin install
 
 | Plugin | Version | Source | Claude Code | CodeBuddy | Codex | Kimi Code |
 | --- | --- | --- | --- | --- | --- | --- |
-| artifact-chain-assistant | 0.8.0 | `ifoohoo/artifact-chain-assistant` | ✓ | ✓ | ✓ | — |
+| artifact-chain-assistant | 0.8.1 | `ifoohoo/artifact-chain-assistant` | ✓ | ✓ | ✓ | — |
 | e2e-test | 0.2.0-alpha.2 | `ifoohoo/e2e-test` | ✓ | ✓ | ✓ | — |
-| flow-architect | 0.5.1 | `ifoohoo/flow-architect` | ✓ | — | ✓ | — |
+| flow-architect | 0.5.3 | `ifoohoo/flow-architect` | ✓ | — | ✓ | — |
 | release-skill | 0.2.3 | `ifoohoo/release-skill` | ✓ | ✓ | ✓ | ✓ |
 
 「✓」means the plugin is listed in that platform's manifest; 「—」means it is not. The `platforms` field in the source is the sole explicit distribution switch; CodeBuddy/WorkBuddy's official fallback to `.claude-plugin/plugin.json` does not change distribution status.

@@ -13,7 +13,7 @@
         "repo": "ifoohoo/artifact-chain-assistant"
       },
       "description": "Artifact-chain intake, review/repair/batch/audit workflows, diagnostics, hooks, and version-lock maintenance helpers.",
-      "version": "0.8.0"
+      "version": "0.8.1"
     },
     {
       "name": "e2e-test",
@@ -31,7 +31,7 @@
         "repo": "ifoohoo/flow-architect"
       },
       "description": "Process architecture review, draft, and meeting package skill family",
-      "version": "0.5.1"
+      "version": "0.5.3"
     },
     {
       "name": "release-skill",
