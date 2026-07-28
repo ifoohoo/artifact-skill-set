@@ -4,18 +4,18 @@
   "owner": {
     "name": "ifoohoo"
   },
-  "version": "20260727143810",
+  "version": "20260728225255",
   "plugins": [
     {
       "name": "artifact-chain-assistant",
       "source": {
         "source": "github",
         "repo": "ifoohoo/artifact-chain-assistant",
-        "ref": "artifact-chain-assistant-v0.8.1",
-        "sha": "ff37fc376eaec4c3532c30dfdcc2ea757181da4c"
+        "ref": "artifact-chain-assistant-v0.8.2",
+        "sha": "578d42f56ec5713d5fd2b17646b6daedb6e0bd4c"
       },
       "description": "Artifact-chain intake, review/repair/batch/audit workflows, diagnostics, hooks, and version-lock maintenance helpers.",
-      "version": "0.8.1"
+      "version": "0.8.2"
     },
     {
       "name": "e2e-test",
@@ -33,11 +33,11 @@
       "source": {
         "source": "github",
         "repo": "ifoohoo/release-skill",
-        "ref": "release-skill-v0.2.3",
-        "sha": "1551b6b076bc22b639ddeec332ef0ed5e5bca876"
+        "ref": "release-skill-v0.2.5",
+        "sha": "7e5a3d45503c03e6f4986f008b8ea9b81219187a"
       },
       "description": "Safe preparation and frozen GitHub/npm production publishing with full happy end verification",
-      "version": "0.2.3"
+      "version": "0.2.5"
     }
   ]
 }

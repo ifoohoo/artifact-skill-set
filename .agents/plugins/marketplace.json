@@ -9,8 +9,8 @@
       "source": {
         "source": "url",
         "url": "https://github.com/ifoohoo/artifact-chain-assistant",
-        "ref": "refs/tags/artifact-chain-assistant-v0.8.1",
-        "sha": "ff37fc376eaec4c3532c30dfdcc2ea757181da4c"
+        "ref": "refs/tags/artifact-chain-assistant-v0.8.2",
+        "sha": "578d42f56ec5713d5fd2b17646b6daedb6e0bd4c"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -37,8 +37,8 @@
       "source": {
         "source": "url",
         "url": "https://github.com/ifoohoo/flow-architect",
-        "ref": "refs/tags/v0.5.3",
-        "sha": "53388178bd81e1892ca6b70125a203b024bee5f5"
+        "ref": "refs/tags/v0.5.4",
+        "sha": "073feb32c2e231be3c56075adcd79b3d358e9f5f"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -51,8 +51,8 @@
       "source": {
         "source": "url",
         "url": "https://github.com/ifoohoo/release-skill",
-        "ref": "refs/tags/release-skill-v0.2.3",
-        "sha": "1551b6b076bc22b639ddeec332ef0ed5e5bca876"
+        "ref": "refs/tags/release-skill-v0.2.5",
+        "sha": "7e5a3d45503c03e6f4986f008b8ea9b81219187a"
       },
       "policy": {
         "installation": "AVAILABLE",
