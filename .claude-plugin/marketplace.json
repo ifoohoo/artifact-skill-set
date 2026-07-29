@@ -4,7 +4,7 @@
   "owner": {
     "name": "ifoohoo"
   },
-  "version": "20260729150403",
+  "version": "20260729113627",
   "plugins": [
     {
       "name": "artifact-chain-assistant",
@@ -44,11 +44,11 @@
       "source": {
         "source": "github",
         "repo": "ifoohoo/release-skill",
-        "ref": "release-skill-v0.2.6",
-        "sha": "99ec7714d3ad37ba65cb8de755cf715f042c8b92"
+        "ref": "release-skill-v0.2.7",
+        "sha": "0f8f13870406a46c818b717c8c5949086a774dd8"
       },
       "description": "Safe preparation and frozen GitHub/npm production publishing with full happy end verification",
-      "version": "0.2.6"
+      "version": "0.2.7"
     }
   ]
 }
