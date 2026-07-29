@@ -9,8 +9,8 @@
       "source": {
         "source": "url",
         "url": "https://github.com/ifoohoo/artifact-chain-assistant",
-        "ref": "refs/tags/artifact-chain-assistant-v0.8.2",
-        "sha": "578d42f56ec5713d5fd2b17646b6daedb6e0bd4c"
+        "ref": "refs/tags/artifact-chain-assistant-v0.8.3",
+        "sha": "75b4ea54b993bd4735756e9c6d9620ce246dacba"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -23,8 +23,8 @@
       "source": {
         "source": "url",
         "url": "https://github.com/ifoohoo/e2e-test",
-        "ref": "refs/tags/v0.2.0-alpha.2",
-        "sha": "dde2a67e0a9cf84865f0dc369ffaf03056727918"
+        "ref": "refs/tags/v0.2.0-alpha.3",
+        "sha": "36836687fb89b4a5fc8630df1c965509505d8b8e"
       },
       "policy": {
         "installation": "AVAILABLE",

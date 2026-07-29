@@ -4,29 +4,29 @@
   "owner": {
     "name": "ifoohoo"
   },
-  "version": "20260729031457",
+  "version": "20260729150403",
   "plugins": [
     {
       "name": "artifact-chain-assistant",
       "source": {
         "source": "github",
         "repo": "ifoohoo/artifact-chain-assistant",
-        "ref": "artifact-chain-assistant-v0.8.2",
-        "sha": "578d42f56ec5713d5fd2b17646b6daedb6e0bd4c"
+        "ref": "artifact-chain-assistant-v0.8.3",
+        "sha": "75b4ea54b993bd4735756e9c6d9620ce246dacba"
       },
       "description": "Artifact-chain intake, review/repair/batch/audit workflows, diagnostics, hooks, and version-lock maintenance helpers.",
-      "version": "0.8.2"
+      "version": "0.8.3"
     },
     {
       "name": "e2e-test",
       "source": {
         "source": "github",
         "repo": "ifoohoo/e2e-test",
-        "ref": "v0.2.0-alpha.2",
-        "sha": "dde2a67e0a9cf84865f0dc369ffaf03056727918"
+        "ref": "v0.2.0-alpha.3",
+        "sha": "36836687fb89b4a5fc8630df1c965509505d8b8e"
       },
       "description": "Experimental, framework-neutral E2E specification skill family (Gate B candidate): help/author/review/repair implemented, provider defaults to NOT_ENABLED and requires explicit project binding.",
-      "version": "0.2.0-alpha.2"
+      "version": "0.2.0-alpha.3"
     },
     {
       "name": "flow-architect",
