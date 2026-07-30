@@ -2,7 +2,7 @@
 
 AI IDE plugin marketplace index covering Claude Code, CodeBuddy/WorkBuddy, OpenAI Codex, and Kimi Code.
 
-**Marketplace version:** `20260729113627`
+**Marketplace version:** `20260730161222`
 
 This repository contains only the marketplace manifests — plugin implementations live in their own repositories.
 
@@ -39,7 +39,7 @@ The environment variable above also causes `owner/repo` shorthand plugin install
 | artifact-chain-assistant | 0.8.3 | `ifoohoo/artifact-chain-assistant` | ✓ | ✓ | ✓ | — |
 | e2e-test | 0.2.0-alpha.3 | `ifoohoo/e2e-test` | ✓ | ✓ | ✓ | — |
 | flow-architect | 0.5.4 | `ifoohoo/flow-architect` | ✓ | — | ✓ | — |
-| release-skill | 0.2.7 | `ifoohoo/release-skill` | ✓ | ✓ | ✓ | ✓ |
+| release-skill | 0.2.8 | `ifoohoo/release-skill` | ✓ | ✓ | ✓ | ✓ |
 
 「✓」means the plugin is listed in that platform's manifest; 「—」means it is not. The `platforms` field in the source is the sole explicit distribution switch; CodeBuddy/WorkBuddy's official fallback to `.claude-plugin/plugin.json` does not change distribution status.
 
