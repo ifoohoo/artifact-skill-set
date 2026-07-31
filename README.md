@@ -2,7 +2,7 @@
 
 AI IDE plugin marketplace index covering Claude Code, CodeBuddy/WorkBuddy, OpenAI Codex, and Kimi Code.
 
-**Marketplace version:** `20260731003537`
+**Marketplace version:** `20260731103830`
 
 This repository contains only the marketplace manifests — plugin implementations live in their own repositories.
 
@@ -31,6 +31,33 @@ You can also add this marketplace via an explicit HTTPS URL:
 The environment variable above also causes `owner/repo` shorthand plugin installations to use HTTPS. Public repositories cloned over HTTPS do not require a GitHub account.
 
 > **Tip:** If Git still rewrites HTTPS URLs to SSH, check your local Git `url.*.insteadOf` configuration.
+
+## 国内用户下载加速方式
+
+没有科学上网的手段，又需要拉取本站技能时，可参考下面的配置，让 Git 通过第三方下载代理访问本站在 GitHub 上公开发布的仓库。下面以 `ghfast.top` 为例：
+
+```bash
+git config --global \
+  url."https://ghfast.top/https://github.com/ifoohoo/".insteadOf \
+  "https://github.com/ifoohoo/"
+```
+
+配置以后照常使用上面的安装命令即可。Git 只会在本机改写实际下载地址，市场清单和插件清单里记录的 GitHub 仓库地址不会改变。
+
+> **请注意：** 本站技能最终以 GitHub 上由 `ifoohoo` 维护的仓库为准。`ghfast.top` 是第三方下载代理，不是本站维护的镜像，也不参与版本发布。这种方式只适合公开仓库的只读拉取；不要通过代理访问私有仓库，也不要向代理发送 GitHub Token、密码等凭证。第三方代理可能中断服务或出现缓存延迟；市场仍以插件的 Git Tag 和完整 Commit SHA 核对版本，取不到对应提交时应停止安装。
+
+查看当前 URL 改写配置：
+
+```bash
+git config --global --get-regexp '^url\..*\.insteadof$'
+```
+
+不再需要代理时，可以删除这项配置：
+
+```bash
+git config --global --unset-all \
+  url."https://ghfast.top/https://github.com/ifoohoo/".insteadOf
+```
 
 ## Plugins
 
