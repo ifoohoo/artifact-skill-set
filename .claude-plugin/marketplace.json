@@ -22,11 +22,11 @@
       "source": {
         "source": "github",
         "repo": "ifoohoo/e2e-test",
-        "ref": "v0.2.0-alpha.4",
-        "sha": "0d087a512251b8cd8b4db56230c58f0cf0c8691b"
+        "ref": "v0.2.0",
+        "sha": "295e5eaec2beaa086d99184575e580c4c2d7029d"
       },
-      "description": "Experimental, framework-neutral E2E specification skill family (Gate B candidate): help/author/review/repair implemented, provider defaults to NOT_ENABLED and requires explicit project binding.",
-      "version": "0.2.0-alpha.4"
+      "description": "Framework-neutral E2E specification skill family: stable help/default/author/review/repair; browser implement/execute remains experimental, explicitly bound, and NOT_ENABLED by default.",
+      "version": "0.2.0"
     },
     {
       "name": "flow-architect",
