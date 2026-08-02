@@ -23,8 +23,8 @@
       "source": {
         "source": "url",
         "url": "https://github.com/ifoohoo/e2e-test",
-        "ref": "refs/tags/v0.2.0",
-        "sha": "295e5eaec2beaa086d99184575e580c4c2d7029d"
+        "ref": "refs/tags/v0.2.1",
+        "sha": "258e853b3abc91c8c20f2904bc6be030b563cb9f"
       },
       "policy": {
         "installation": "AVAILABLE",
