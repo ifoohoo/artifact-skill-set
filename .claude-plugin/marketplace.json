@@ -1,10 +1,10 @@
 {
   "name": "artifact-skill-set",
-  "description": "AI IDE plugin marketplace index covering Claude Code, CodeBuddy/WorkBuddy, OpenAI Codex, and Kimi Code",
+  "description": "Artifact workflow plugin marketplace for Claude Code, CodeBuddy/WorkBuddy, OpenAI Codex, and Kimi Code",
   "owner": {
     "name": "ifoohoo"
   },
-  "version": "20260731110611",
+  "version": "20260803024516",
   "plugins": [
     {
       "name": "artifact-chain-assistant",
@@ -25,7 +25,7 @@
         "ref": "v0.2.1",
         "sha": "258e853b3abc91c8c20f2904bc6be030b563cb9f"
       },
-      "description": "Framework-neutral E2E specification skill family: stable help/default/author/review/repair; browser implement/execute remains experimental, explicitly bound, and NOT_ENABLED by default.",
+      "description": "Framework-neutral E2E specification skill family: stable help/default/author/review/repair core with CANDIDATE_QUALIFIED status; experimental browser extensions; provider defaults to NOT_ENABLED and requires explicit project binding.",
       "version": "0.2.1"
     },
     {
@@ -38,17 +38,6 @@
       },
       "description": "Process architecture review, draft, and meeting package skill family",
       "version": "0.5.4"
-    },
-    {
-      "name": "release-skill",
-      "source": {
-        "source": "github",
-        "repo": "ifoohoo/release-skill",
-        "ref": "release-skill-v0.3.0",
-        "sha": "41b248da85f047e6feec7649ff3efb5e99a8fa27"
-      },
-      "description": "Safe preparation and frozen GitHub/npm production publishing with full happy end verification",
-      "version": "0.3.0"
     }
   ]
 }
