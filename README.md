@@ -4,7 +4,9 @@
 
 Artifact workflow plugin marketplace for Claude Code, CodeBuddy/WorkBuddy, OpenAI Codex, and Kimi Code.
 
-**Marketplace version:** `20260803212231`
+**Marketplace version:** `20260806112320`
+
+**Author:** 广州市风荷科技有限公司
 
 This repository contains only the marketplace manifests — plugin implementations live in their own repositories.
 
@@ -65,7 +67,7 @@ git config --global --unset-all \
 
 | Plugin | Version | Source | Claude Code | CodeBuddy | Codex | Kimi Code |
 | --- | --- | --- | --- | --- | --- | --- |
-| artifact-chain-assistant | 0.8.5 | `ifoohoo/artifact-chain-assistant` | ✓ | ✓ | ✓ | — |
+| artifact-chain-assistant | 0.9.0 | `ifoohoo/artifact-chain-assistant` | ✓ | ✓ | ✓ | ✓ |
 | e2e-test | 0.2.1 | `ifoohoo/e2e-test` | ✓ | ✓ | ✓ | — |
 | flow-architect | 0.5.4 | `ifoohoo/flow-architect` | ✓ | — | ✓ | — |
 
@@ -80,7 +82,7 @@ The following published npm packages are part of the Artifact product line, but 
 | Foundation component | Published version | npm package | Git tag | Commit SHA | Related plugin | Role |
 | --- | --- | --- | --- | --- | --- | --- |
 | `agent-method-registry` | `0.2.2` | [agent-method-registry@0.2.2](https://www.npmjs.com/package/agent-method-registry/v/0.2.2) | [`agent-method-registry-v0.2.2`](https://github.com/ifoohoo/agent-method-registry/tree/agent-method-registry-v0.2.2) | [`2d15ae574e122c5dfabf245680b5a8de628d27e4`](https://github.com/ifoohoo/agent-method-registry/commit/2d15ae574e122c5dfabf245680b5a8de628d27e4) | `artifact-chain-assistant` | Deterministic method catalog resolution, provider verification, binding, and diagnostics library and CLI. Use this npm package directly for standalone registry work. artifact-chain-assistant has Registry-backed routing, but governs its own dependency version independently of this listing. |
-| `artifact-graph` | `0.8.5` | [artifact-graph@0.8.5](https://www.npmjs.com/package/artifact-graph/v/0.8.5) | [`artifact-graph-v0.8.5`](https://github.com/ifoohoo/artifact-graph/tree/artifact-graph-v0.8.5) | [`efd2b29d80f071f99e5118542bafa1ec2db2d600`](https://github.com/ifoohoo/artifact-graph/commit/efd2b29d80f071f99e5118542bafa1ec2db2d600) | `artifact-chain-assistant` | Git-native artifact graph runtime and CLI for scanning, querying, validation, and version locks. Install this npm package in the target project. artifact-chain-assistant provides related workflow guidance and declares its own compatible runtime version. |
+| `artifact-graph` | `0.9.0` | [artifact-graph@0.9.0](https://www.npmjs.com/package/artifact-graph/v/0.9.0) | [`artifact-graph-v0.9.0`](https://github.com/ifoohoo/artifact-graph/tree/artifact-graph-v0.9.0) | [`1c847f0bdcba1a815e30804ef31a7fac30c0a305`](https://github.com/ifoohoo/artifact-graph/commit/1c847f0bdcba1a815e30804ef31a7fac30c0a305) | `artifact-chain-assistant` | Git-native artifact graph runtime and CLI for scanning, querying, validation, and version locks. Install this npm package in the target project. artifact-chain-assistant provides related workflow guidance and declares its own compatible runtime version. |
 
 ## About this marketplace
 

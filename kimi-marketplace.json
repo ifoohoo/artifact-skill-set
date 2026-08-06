@@ -1,4 +1,9 @@
 {
   "version": "2",
-  "plugins": []
+  "plugins": [
+    {
+      "id": "artifact-chain-assistant",
+      "source": "https://github.com/ifoohoo/artifact-chain-assistant"
+    }
+  ]
 }
