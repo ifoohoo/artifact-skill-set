@@ -67,7 +67,7 @@ git config --global --unset-all \
 
 | 插件 | 版本 | 源仓库 | Claude Code | CodeBuddy | Codex | Kimi Code |
 | --- | --- | --- | --- | --- | --- | --- |
-| artifact-chain-assistant | 0.9.2 | `ifoohoo/artifact-chain-assistant` | ✓ | ✓ | ✓ | ✓ |
+| artifact-chain-assistant | 0.9.3 | `ifoohoo/artifact-chain-assistant` | ✓ | ✓ | ✓ | ✓ |
 | e2e-test | 0.2.1 | `ifoohoo/e2e-test` | ✓ | ✓ | ✓ | — |
 | flow-architect | 0.5.4 | `ifoohoo/flow-architect` | ✓ | — | ✓ | — |
 
