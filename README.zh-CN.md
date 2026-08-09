@@ -2,9 +2,9 @@
 
 [English](README.md)
 
-这是 Artifact 聚合产品线面向 Claude Code、CodeBuddy/WorkBuddy、OpenAI Codex 和 Kimi Code 的插件市场。
+这是 Artifact 聚合产品线面向 Claude Code、CodeBuddy/WorkBuddy、OpenAI Codex、Kimi Code 和 Qoder 的插件市场。
 
-**市场版本：** `20260807182341`
+**市场版本：** `20260809035211`
 
 **作者：** 广州市风荷科技有限公司
 
@@ -18,6 +18,7 @@
 | CodeBuddy / WorkBuddy | `/plugin marketplace add ifoohoo/artifact-skill-set` |
 | OpenAI Codex | `codex plugin marketplace add ifoohoo/artifact-skill-set` |
 | Kimi Code | `/plugins marketplace https://raw.githubusercontent.com/ifoohoo/artifact-skill-set/main/kimi-marketplace.json` |
+| Qoder | `qodercli plugin marketplace add ifoohoo/artifact-skill-set --scope user` |
 
 ## 使用 HTTPS，不走 SSH
 
@@ -65,15 +66,17 @@ git config --global --unset-all \
 
 ## 已收录插件
 
-| 插件 | 版本 | 源仓库 | Claude Code | CodeBuddy | Codex | Kimi Code |
-| --- | --- | --- | --- | --- | --- | --- |
-| artifact-chain-assistant | 0.9.3 | `ifoohoo/artifact-chain-assistant` | ✓ | ✓ | ✓ | ✓ |
-| e2e-test | 0.2.1 | `ifoohoo/e2e-test` | ✓ | ✓ | ✓ | — |
-| flow-architect | 0.5.4 | `ifoohoo/flow-architect` | ✓ | — | ✓ | — |
+| 插件 | 版本 | 源仓库 | Claude Code | CodeBuddy | Codex | Kimi Code | Qoder |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| artifact-chain-assistant | 0.9.4 | `ifoohoo/artifact-chain-assistant` | ✓ | ✓ | ✓ | ✓ | ✓ |
+| e2e-test | 0.2.1 | `ifoohoo/e2e-test` | ✓ | ✓ | ✓ | — | — |
+| flow-architect | 0.5.4 | `ifoohoo/flow-architect` | ✓ | — | ✓ | — | — |
 
-“✓”表示该插件已进入对应平台的市场清单，“—”表示没有进入。是否分发只看真源中的 `platforms` 开关；CodeBuddy/WorkBuddy 即使可以回退读取 `.claude-plugin/plugin.json`，也不会因此自动开启分发。
+“✓”表示该插件已进入对应平台的市场清单；Qoder 列表示它可通过共用的 Claude 市场清单使用。“—”表示没有进入。是否分发只看真源中的 `platforms` 开关；CodeBuddy/WorkBuddy 即使可以回退读取 `.claude-plugin/plugin.json`，也不会因此自动开启分发。
 
 添加市场后，请使用对应平台的插件管理器安装具体插件。例如在 Claude Code 中执行 `/plugin install <name>@artifact-skill-set`。
+
+Qoder 复用 Claude 市场清单；artifact-chain-assistant 0.9.4 只验证了 skills-only 安装，不承诺兼容 Claude commands 或 hooks。
 
 ## 基础组件
 
@@ -82,7 +85,7 @@ git config --global --unset-all \
 | 基础组件 | 已发布版本 | npm 包 | Git 标签 | 提交 SHA | 相关插件 | 定位 |
 | --- | --- | --- | --- | --- | --- | --- |
 | `agent-method-registry` | `0.2.2` | [agent-method-registry@0.2.2](https://www.npmjs.com/package/agent-method-registry/v/0.2.2) | [`agent-method-registry-v0.2.2`](https://github.com/ifoohoo/agent-method-registry/tree/agent-method-registry-v0.2.2) | [`2d15ae574e122c5dfabf245680b5a8de628d27e4`](https://github.com/ifoohoo/agent-method-registry/commit/2d15ae574e122c5dfabf245680b5a8de628d27e4) | `artifact-chain-assistant` | 提供确定性的方法目录解析、提供方验证、绑定和诊断能力的库与命令行工具。 独立使用 Registry 时直接安装这个 npm 包。artifact-chain-assistant 具备 Registry 支撑的路由能力，但它自身使用的依赖版本不由这张表决定。 |
-| `artifact-graph` | `0.9.2` | [artifact-graph@0.9.2](https://www.npmjs.com/package/artifact-graph/v/0.9.2) | [`artifact-graph-v0.9.2`](https://github.com/ifoohoo/artifact-graph/tree/artifact-graph-v0.9.2) | [`09efb6246836d6fde49f75a6d309ad78e861987f`](https://github.com/ifoohoo/artifact-graph/commit/09efb6246836d6fde49f75a6d309ad78e861987f) | `artifact-chain-assistant` | 用于扫描、查询、校验和版本锁的 Git 原生制品图运行时与命令行工具。 在目标项目中安装这个 npm 包。artifact-chain-assistant 提供相关工作流指导，并独立声明它所兼容的运行时版本。 |
+| `artifact-graph` | `0.9.4` | [artifact-graph@0.9.4](https://www.npmjs.com/package/artifact-graph/v/0.9.4) | [`artifact-graph-v0.9.4`](https://github.com/ifoohoo/artifact-graph/tree/artifact-graph-v0.9.4) | [`9d760ed5698aafe44b6f2bf5b802980e1a42afbe`](https://github.com/ifoohoo/artifact-graph/commit/9d760ed5698aafe44b6f2bf5b802980e1a42afbe) | `artifact-chain-assistant` | 用于扫描、查询、校验和版本锁的 Git 原生制品图运行时与命令行工具。 在目标项目中安装这个 npm 包。artifact-chain-assistant 提供相关工作流指导，并独立声明它所兼容的运行时版本。 |
 
 ## 关于这个市场
 
