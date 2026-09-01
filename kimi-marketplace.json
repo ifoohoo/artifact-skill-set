@@ -3,7 +3,7 @@
   "plugins": [
     {
       "id": "artifact-chain-assistant",
-      "source": "https://github.com/ifoohoo/artifact-chain-assistant/commit/3829cdc2395a17d12d1e1b9c7d83ad9d0820430e"
+      "source": "https://github.com/ifoohoo/artifact-chain-assistant"
     }
   ]
 }
