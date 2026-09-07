@@ -4,18 +4,18 @@
   "owner": {
     "name": "ifoohoo"
   },
-  "version": "20260901200249",
+  "version": "20260908020651",
   "plugins": [
     {
       "name": "artifact-chain-assistant",
       "source": {
         "source": "github",
         "repo": "ifoohoo/artifact-chain-assistant",
-        "ref": "artifact-chain-assistant-v0.10.0",
-        "sha": "a4ec3918d45dc61539b30a9e0069d8e9d2522645"
+        "ref": "artifact-chain-assistant-v0.12.0",
+        "sha": "b524af0aedf4d1ab457865d3ebf121da3213a642"
       },
       "description": "Artifact-chain intake, review/repair/batch/audit workflows, diagnostics, hooks, and version-lock maintenance helpers.",
-      "version": "0.10.0"
+      "version": "0.12.0"
     },
     {
       "name": "e2e-test",

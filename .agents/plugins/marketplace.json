@@ -9,8 +9,8 @@
       "source": {
         "source": "url",
         "url": "https://github.com/ifoohoo/artifact-chain-assistant",
-        "ref": "refs/tags/artifact-chain-assistant-v0.10.0",
-        "sha": "a4ec3918d45dc61539b30a9e0069d8e9d2522645"
+        "ref": "refs/tags/artifact-chain-assistant-v0.12.0",
+        "sha": "b524af0aedf4d1ab457865d3ebf121da3213a642"
       },
       "policy": {
         "installation": "AVAILABLE",
