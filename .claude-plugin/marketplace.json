@@ -33,11 +33,11 @@
       "source": {
         "source": "github",
         "repo": "ifoohoo/flow-architect",
-        "ref": "v0.5.4",
-        "sha": "073feb32c2e231be3c56075adcd79b3d358e9f5f"
+        "ref": "v0.6.0",
+        "sha": "0b0894175f77b98201976ea9404364a8d3644917"
       },
       "description": "Process architecture review, draft, and meeting package skill family",
-      "version": "0.5.4"
+      "version": "0.6.0"
     }
   ]
 }
