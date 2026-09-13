@@ -4,7 +4,7 @@
   "owner": {
     "name": "ifoohoo"
   },
-  "version": "20260908020651",
+  "version": "20260913184630",
   "plugins": [
     {
       "name": "artifact-chain-assistant",
@@ -33,11 +33,11 @@
       "source": {
         "source": "github",
         "repo": "ifoohoo/flow-architect",
-        "ref": "v0.6.0",
-        "sha": "0b0894175f77b98201976ea9404364a8d3644917"
+        "ref": "v0.6.1",
+        "sha": "ba098f4940d6676f078ee123d9dfe8328967648b"
       },
       "description": "Process architecture review, draft, and meeting package skill family",
-      "version": "0.6.0"
+      "version": "0.6.1"
     }
   ]
 }

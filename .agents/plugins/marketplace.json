@@ -37,8 +37,8 @@
       "source": {
         "source": "url",
         "url": "https://github.com/ifoohoo/flow-architect",
-        "ref": "refs/tags/v0.6.0",
-        "sha": "0b0894175f77b98201976ea9404364a8d3644917"
+        "ref": "refs/tags/v0.6.1",
+        "sha": "ba098f4940d6676f078ee123d9dfe8328967648b"
       },
       "policy": {
         "installation": "AVAILABLE",

@@ -4,7 +4,7 @@
 
 这是 Artifact 聚合产品线面向 Claude Code、CodeBuddy/WorkBuddy、OpenAI Codex 和 Kimi Code 的插件市场。
 
-**市场版本：** `20260908020651`
+**市场版本：** `20260913184630`
 
 **作者：** 广州市风荷科技有限公司
 
@@ -69,7 +69,7 @@ git config --global --unset-all \
 | --- | --- | --- | --- | --- | --- | --- |
 | artifact-chain-assistant | 0.12.0 | `ifoohoo/artifact-chain-assistant` | ✓ | ✓ | ✓ | ✓ |
 | e2e-test | 0.2.1 | `ifoohoo/e2e-test` | ✓ | ✓ | ✓ | — |
-| flow-architect | 0.6.0 | `ifoohoo/flow-architect` | ✓ | — | ✓ | — |
+| flow-architect | 0.6.1 | `ifoohoo/flow-architect` | ✓ | — | ✓ | — |
 
 “✓”表示该插件已进入对应平台的市场清单，“—”表示没有进入。是否分发只看真源中的 `platforms` 开关；CodeBuddy/WorkBuddy 即使可以回退读取 `.claude-plugin/plugin.json`，也不会因此自动开启分发。
 
