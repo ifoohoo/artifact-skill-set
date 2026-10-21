@@ -4,7 +4,7 @@
 
 这是 Artifact 聚合产品线面向 Claude Code、CodeBuddy/WorkBuddy、OpenAI Codex 和 Kimi Code 的插件市场。
 
-**市场版本：** `20261021021624`
+**市场版本：** `20261022021055`
 
 **作者：** 广州市风荷科技有限公司
 
@@ -67,7 +67,7 @@ git config --global --unset-all \
 
 | 插件 | 版本 | 源仓库 | Claude Code | CodeBuddy | Codex | Kimi Code |
 | --- | --- | --- | --- | --- | --- | --- |
-| artifact-chain-assistant | 0.16.1 | `ifoohoo/artifact-chain-assistant` | ✓ | ✓ | ✓ | ✓ |
+| artifact-chain-assistant | 1.0.0 | `ifoohoo/artifact-chain-assistant` | ✓ | ✓ | ✓ | ✓ |
 | e2e-test | 0.2.1 | `ifoohoo/e2e-test` | ✓ | ✓ | ✓ | — |
 | flow-architect | 0.6.1 | `ifoohoo/flow-architect` | ✓ | — | ✓ | — |
 
@@ -82,7 +82,7 @@ git config --global --unset-all \
 | 基础组件 | 已发布版本 | npm 包 | Git 标签 | 提交 SHA | 相关插件 | 定位 |
 | --- | --- | --- | --- | --- | --- | --- |
 | `agent-method-registry` | `0.3.0` | [agent-method-registry@0.3.0](https://www.npmjs.com/package/agent-method-registry/v/0.3.0) | [`agent-method-registry-v0.3.0`](https://github.com/ifoohoo/agent-method-registry/tree/agent-method-registry-v0.3.0) | [`e0ef16e8e75901cf9269c6c9487fc6a721c9d8b6`](https://github.com/ifoohoo/agent-method-registry/commit/e0ef16e8e75901cf9269c6c9487fc6a721c9d8b6) | `artifact-chain-assistant` | 提供确定性的方法目录解析、提供方验证、绑定和诊断能力的库与命令行工具。 独立使用 Registry 时直接安装这个 npm 包。artifact-chain-assistant 具备 Registry 支撑的路由能力，但它自身使用的依赖版本不由这张表决定。 |
-| `artifact-graph` | `0.16.1` | [artifact-graph@0.16.1](https://www.npmjs.com/package/artifact-graph/v/0.16.1) | [`artifact-graph-v0.16.1`](https://github.com/ifoohoo/artifact-graph/tree/artifact-graph-v0.16.1) | [`cd846d82f5256971429e3917591a9d81f17fc3c4`](https://github.com/ifoohoo/artifact-graph/commit/cd846d82f5256971429e3917591a9d81f17fc3c4) | `artifact-chain-assistant` | 用于扫描、查询、校验和版本锁的 Git 原生制品图运行时与命令行工具。 在目标项目中安装这个 npm 包。artifact-chain-assistant 提供相关工作流指导，并独立声明它所兼容的运行时版本。 |
+| `artifact-graph` | `1.0.0` | [artifact-graph@1.0.0](https://www.npmjs.com/package/artifact-graph/v/1.0.0) | [`artifact-graph-v1.0.0`](https://github.com/ifoohoo/artifact-graph/tree/artifact-graph-v1.0.0) | [`5e4bd6b6624337a3ffc5d4bc0eaa249f6d83dfce`](https://github.com/ifoohoo/artifact-graph/commit/5e4bd6b6624337a3ffc5d4bc0eaa249f6d83dfce) | `artifact-chain-assistant` | 用于扫描、查询、校验和版本锁的 Git 原生制品图运行时与命令行工具。 在目标项目中安装这个 npm 包。artifact-chain-assistant 提供相关工作流指导，并独立声明它所兼容的运行时版本。 |
 
 ## 关于这个市场
 
