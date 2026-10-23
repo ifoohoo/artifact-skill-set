@@ -4,7 +4,7 @@
 
 Artifact workflow plugin marketplace for Claude Code, CodeBuddy/WorkBuddy, OpenAI Codex, and Kimi Code.
 
-**Marketplace version:** `20261024013908`
+**Marketplace version:** `20261024015600`
 
 **Author:** 广州市风荷科技有限公司
 
@@ -67,7 +67,7 @@ git config --global --unset-all \
 
 | Plugin | Version | Source | Claude Code | CodeBuddy | Codex | Kimi Code |
 | --- | --- | --- | --- | --- | --- | --- |
-| artifact-chain-assistant | 1.0.1 | `ifoohoo/artifact-chain-assistant` | ✓ | ✓ | ✓ | ✓ |
+| artifact-chain-assistant | 1.1.0 | `ifoohoo/artifact-chain-assistant` | ✓ | ✓ | ✓ | ✓ |
 | e2e-test | 0.2.1 | `ifoohoo/e2e-test` | ✓ | ✓ | ✓ | — |
 | flow-architect | 0.6.1 | `ifoohoo/flow-architect` | ✓ | — | ✓ | — |
 
